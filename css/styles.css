@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-size: 16px;
+  margin: 0;
+  display: inline-block;
+}
+
+h2 {
+  color: #B6B6B6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.bio {
+  text-align: justify;
+  margin: 5px 0;
+}
+
+.recel, .insel {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.recel {
+  margin-top: 45px;
+}
+
+.release {
+  margin: 0 auto;
+}
+
+.art {
+  max-width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  max-width: 70%;
+  margin: 15px auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mail {
+  padding: 3px;
+}
+
+.tube {
+  padding: 1px;
+}
+
+.embed {
+  border: 0;
+  width: 85%;
+  height: 42px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 600px) {
+  .bio {
+    text-align: center;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .recel {
+    margin-top: 15px;
+  }
+
+  .contact {
+    justify-content: space-around;
+    max-width: 35%;
+  }
+}
