@@ -111,3 +111,11 @@ a {
     max-width: 35%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
