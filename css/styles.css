@@ -41,7 +41,7 @@ a {
   margin: 5px 0;
 }
 
-.together, .recel, .insel, .rerajahan, .lub-dub {
+.together, .recel, .insel, .rerajahan, .lubdub {
   display: flex;
   flex-direction: column;
   margin: 15px 0;
