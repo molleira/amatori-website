@@ -1,17 +1,20 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Roboto Mono', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
-}
+  /* line-height: 1.6; */
+  color: white;
+  background: rgb(0,0,0);
+  background: linear-gradient(115deg, #000 0%, #2D2D2D 100%);}
 
 h1, h2, h3 {
   font-size: 16px;
-  margin: 0;
   display: inline-block;
 }
 
@@ -21,19 +24,51 @@ h2 {
 
 a {
   text-decoration: none;
+  color: white;
 }
+
+/* ----- container ----- */
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+/* ----- navigation ----- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 45px;
+  margin-right: 50px;
+}
+
+.nav__elem {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__bio {
+  margin-left: 90px;
+}
+
+/* ----- section ----- */
 
 .intro {
   display: flex;
   flex-direction: column;
   max-width: 85%;
   margin: 0 auto;
-}
-
-.logo {
-  height: 70px;
-  padding: 10px 0;
-  margin-top: 15px;
 }
 
 .bio {
