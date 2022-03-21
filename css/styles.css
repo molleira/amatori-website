@@ -6,16 +6,24 @@
 
 body {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 16px;
   font-weight: 400;
-  /* line-height: 1.6; */
   color: white;
+  /* font-size: 16px; */
+  /* line-height: 1.6; */
   background: rgb(0,0,0);
-  background: linear-gradient(115deg, #000 0%, #2D2D2D 100%);}
+  background: linear-gradient(115deg, #000 0%, #2D2D2D 100%);
+}
 
-h1, h2, h3 {
+/* ----- fonts ----- */
+
+/* h1, h2, h3 {
   font-size: 16px;
   display: inline-block;
+} */
+
+h1 {
+  font-size: 3em;
+  margin: 0;
 }
 
 h2 {
@@ -32,6 +40,7 @@ a {
 .container {
   max-width: 1080px;
   margin: auto;
+  padding: 0 5em;
 }
 
 /* ----- navigation ----- */
@@ -65,16 +74,28 @@ a {
 /* ----- section ----- */
 
 .intro {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   max-width: 85%;
-  margin: 0 auto;
+  margin: 0 auto; */
+  margin-top: 80px;
 }
 
-.bio {
+.intro__text {
+  margin-bottom: 65px;
+}
+
+/* .bio {
   text-align: justify;
   margin: 5px 0;
+} */
+
+.divider {
+  border-bottom: 1px solid white;
+  margin-right: 90%;
 }
+
+/* ----- music ----- */
 
 .together, .recel, .insel, .rerajahan, .lubdub {
   display: flex;
