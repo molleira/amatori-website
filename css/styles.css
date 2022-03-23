@@ -26,9 +26,9 @@ h1 {
   margin: 0;
 }
 
-h2 {
+/* h2 {
   color: #B6B6B6;
-}
+} */
 
 a {
   text-decoration: none;
@@ -38,9 +38,9 @@ a {
 /* ----- container ----- */
 
 .container {
-  max-width: 1080px;
+  max-width: 1164px;
   margin: auto;
-  padding: 0 5em;
+  /* padding: 0 5em; */
 }
 
 /* ----- navigation ----- */
@@ -79,6 +79,7 @@ a {
   max-width: 85%;
   margin: 0 auto; */
   margin-top: 80px;
+  max-width: 1056px;
 }
 
 .intro__text {
@@ -97,25 +98,71 @@ a {
 
 /* ----- music ----- */
 
-.together, .recel, .insel, .rerajahan, .lubdub {
+.music {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+}
+
+.card {
+  margin-bottom: 80px;
+}
+
+.rerajahan, .insel {
+  justify-self: center;
+}
+
+.together {
+  justify-self: end;
+}
+
+/*.together {
+  margin-right: 0px;
+} */
+
+.music__release {
+  margin-bottom: 25px;
+}
+
+.music__catalog {
+  font-size: .85em;
+  color: #B6B6B6;
+}
+
+.music__title {
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* @media only screen and (min-width: 992px) {
+  .music {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* max-width: 85%; */
+    /* margin: 80px auto;
+    justify-content: space-between;
+  }
+}*/
+
+/* .together, .recel, .insel, .rerajahan, .lubdub {
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
-}
+  /* margin: 15px 0; */
+/*} */
 
-.recel {
+/*.recel {
   margin-top: 45px;
-}
+} */
 
-.release {
+/* .release {
   margin: 0 auto;
-}
+} */
 
-.art {
+/* .art {
   max-width: 85%;
   display: block;
   margin: 0 auto;
-}
+} */
 
 .contact {
   display: flex;
@@ -158,20 +205,13 @@ a {
     margin: 0 auto;
   }
 
-  .recel, .insel {
+  /* .recel, .insel {
     margin-top: 15px;
-  }
+  } */
 
   .contact {
     justify-content: space-around;
     max-width: 35%;
   }
 }
-@media only screen and (min-width: 992px) {
-  .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 85%;
-    margin: 0 auto;
-  }
-}
+
