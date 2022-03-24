@@ -22,7 +22,8 @@ body {
 } */
 
 h1 {
-  font-size: 3em;
+  font-size: 1.5em;
+  /* font-size: 3em; */
   margin: 0;
 }
 
@@ -38,18 +39,19 @@ a {
 /* ----- container ----- */
 
 .container {
-  max-width: 1164px;
+  /* max-width: 1164px; */
   margin: auto;
-  /* padding: 0 5em; */
+  padding: 0 1.25em;
 }
 
 /* ----- navigation ----- */
 
-.nav {
+.brand {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 25px;
+  /* margin-top: 50px; */
 }
 
 .nav__brand {
@@ -58,8 +60,123 @@ a {
 }
 
 .nav__logo {
+  height: 35px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 1em; */
+}
+
+.nav {
+  position: fixed;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--clr-accent);
+}
+
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  /* top: 1em; */
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: #fff;
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  top: 6px;
+}
+.hamburger::after {
+  bottom: 6px;
+}
+
+/* .nav__logo {
   height: 45px;
   margin-right: 50px;
+} */
+
+.nav__title {
+  display: none;
+}
+
+.nav__mixes, .nav__bio {
+  display: none;
 }
 
 .nav__elem {
@@ -78,12 +195,15 @@ a {
   flex-direction: column;
   max-width: 85%;
   margin: 0 auto; */
-  margin-top: 80px;
-  max-width: 1056px;
+
+  margin-top: 25px;
+  /* margin-top: 80px;
+  max-width: 1056px; */
 }
 
 .intro__text {
-  margin-bottom: 65px;
+  margin-bottom: 25px;
+  /* margin-bottom: 65px; */
 }
 
 /* .bio {
@@ -93,19 +213,29 @@ a {
 
 .divider {
   border-bottom: 1px solid white;
-  margin-right: 90%;
+  width: 100px;
 }
 
 /* ----- music ----- */
 
 .music {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 80px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  margin: 60px auto 0;
+  /* margin-top: 80px; */
+}
+
+iframe {
+  border: 0;
+  min-width: 335px;
+  max-width: 350px;
+  min-height: 455px;
+  height: 470px;
 }
 
 .card {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  /* margin-bottom: 80px; */
 }
 
 .rerajahan, .insel {
@@ -176,7 +306,8 @@ a {
 } */
 
 .contact {
-  margin: 180px auto 36px;
+  margin: 65px auto 25px;
+  /* margin: 180px auto 36px; */
   text-align: center;
 }
 

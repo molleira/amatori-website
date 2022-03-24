@@ -15,7 +15,7 @@
 
 <body>
   <div class="container">
-    <nav class="nav">
+    <!-- <nav class="nav">
       <ul class="nav__brand">
         <a href="https://www.amatori.net/">
           <img class="nav__logo" src="img/logo.png" alt="amatori logo">
@@ -24,10 +24,39 @@
       </ul>
 
       <ul class="nav__elem">
+        <a><img src="img/hamburger.png" alt="menu" class="hamburger"></a>
         <li><a class="nav__mixes" href="https://www.amatori.net/mixes">Mixes</a></li>
         <li><a class="nav__bio" href="https://www.amatori.net/bio">Bio</a></li>
       </ul>
-    </nav>
+    </nav> -->
+    <header>
+      <div class="brand">
+        <a href="https://www.amatori.net/">
+          <img class="nav__logo" src="img/logo.png" alt="amatori logo">
+        </a>
+        <button class="nav-toggle" arial-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+
+      <!-- nav -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <section class="intro">
       <h1 class="intro__text">
@@ -53,7 +82,7 @@
           src="https://bandcamp.com/EmbeddedPlayer/album=149452267/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
           seamless><a href="https://amatori.bandcamp.com/album/lub-dub">Lub ~ Dub by Amatori</a></iframe> -->
 
-        <iframe style="border: 0; width: 350px; height: 470px;"
+        <iframe
           src="https://bandcamp.com/EmbeddedPlayer/album=149452267/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
           seamless>
           <a href="https://amatori.bandcamp.com/album/lub-dub">Lub ~ Dub by Amatori</a>
@@ -74,7 +103,7 @@
           src="https://bandcamp.com/EmbeddedPlayer/album=2805501825/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
           seamless><a href="https://amatori.bandcamp.com/album/rerajahan">Rerajahan by Ruder</a></iframe> -->
 
-        <iframe style="border: 0; width: 350px; height: 470px;"
+        <iframe
           src="https://bandcamp.com/EmbeddedPlayer/album=2805501825/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
           seamless>
           <a href="https://amatori.bandcamp.com/album/rerajahan">Rerajahan by Ruđer</a>
@@ -97,7 +126,7 @@
           <a href="https://amatori.bandcamp.com/album/together">Together by Stereo</a>
         </iframe> -->
 
-        <iframe style="border: 0; width: 350px; height: 470px;"
+        <iframe
           src="https://bandcamp.com/EmbeddedPlayer/album=2173139097/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
           seamless>
           <a href="https://amatori.bandcamp.com/album/together">Together by Stereo</a>
@@ -120,7 +149,7 @@
           <a href="https://amatori.bandcamp.com/album/recel">Recel by Marc Oller</a>
         </iframe> -->
 
-        <iframe style="border: 0; width: 350px; height: 470px;"
+        <iframe
           src="https://bandcamp.com/EmbeddedPlayer/album=4089356642/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
           seamless>
           <a href="https://amatori.bandcamp.com/album/recel">Recel by Marc Oller</a>
@@ -143,7 +172,7 @@
           <a href="https://amatori.bandcamp.com/album/die-insel">Die Insel by Amatori</a>
         </iframe> -->
 
-        <iframe style="border: 0; width: 350px; height: 470px;"
+        <iframe
           src="https://bandcamp.com/EmbeddedPlayer/album=3297157875/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
           seamless>
           <a href="https://amatori.bandcamp.com/album/die-insel">Die Insel by Amatori</a>
@@ -173,6 +202,9 @@
     </footer>
 
   </div>
+
+  <script src="app.js"></script>
+
 </body>
 
 </html>
