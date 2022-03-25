@@ -42,6 +42,7 @@ a {
   /* max-width: 1164px; */
   margin: auto;
   padding: 0 1.25em;
+  /* height: 100vh; */
 }
 
 /* ----- navigation ----- */
@@ -361,6 +362,24 @@ a {
   margin: 0 auto;
 } */
 
+/*----- bio -----*/
+.bioimg {
+  width: 100%;
+  margin-top: 5.8em;
+  z-index: -1;
+  position: absolute;
+}
+
+.bio {
+  margin-top: 9em;
+  font-weight: 400;
+}
+
+.bio__text {
+  margin-top: 3.75em;
+line-height: 1.5;
+}
+
 /*----- footer -----*/
 
 /* .contact {
@@ -410,6 +429,11 @@ a {
   margin: 0 auto;
 } */
 
+.current {
+  width: 100px;
+  border-bottom:4px solid #7BECD8;
+}
+
 @media all and (min-width: 800px) {
   .container {
     padding: 0 2em;
@@ -439,6 +463,15 @@ a {
   .music {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .bioimg {
+    width: 50%;
+    left: 23.5em;
+  }
+
+  .bio {
+    max-width: 70%;
   }
   
   /* .bio {
@@ -485,16 +518,25 @@ a {
   .intro__text {
     margin-bottom: 65px;
   }
-  .bio {
+  /* .bio {
     text-align: justify;
     margin: 5px 0;
-  }
+  } */
   .music {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* max-width: 85%; */
     margin-top: 80px;
     justify-content: space-between;
+  }
+
+  .bioimg {
+    left: 36em;
+  }
+
+  .bio {
+    margin-top: 7em;
+    max-width: 90%;
   }
 }
 
