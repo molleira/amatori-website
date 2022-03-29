@@ -1,3 +1,5 @@
+/* ---------- document ---------- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,18 +10,17 @@ body {
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 400;
   color: white;
-  /* font-size: 16px; */
-  /* line-height: 1.6; */
   background: rgb(0,0,0);
   background: linear-gradient(115deg, #000 0%, #2D2D2D 100%);
 }
 
-/* ----- fonts ----- */
+.container {
+    margin: auto;
+    padding: 0 1.25em;
+}
 
-/* h1, h2, h3 {
-  font-size: 16px;
-  display: inline-block;
-} */
+
+/* ---------- fonts ---------- */
 
 h1 {
   font-size: 1.5em;
@@ -27,31 +28,13 @@ h1 {
   margin: 0;
 }
 
-/* h2 {
-  color: #B6B6B6;
-} */
-
 a {
   text-decoration: none;
   color: white;
 }
 
-/* ----- container ----- */
 
-.container {
-  /* max-width: 1164px; */
-  margin: auto;
-  padding: 0 1.25em;
-  /* height: 100vh; */
-}
-
-/* ----- navigation ----- */
-
-/* header {
-  display: flex;
-  justify-content: space-between;
-  /* padding: 1em; */
-/*} */
+/* ---------- navigation ---------- */
 
 .brand {
   display: flex;
@@ -60,11 +43,6 @@ a {
   margin-top: 25px;
   /* margin-top: 50px; */
 }
-
-/* .nav__brand {
-  display: flex;
-  align-items: center;
-} */
 
 .brand__logo {
   height: 35px;
@@ -89,10 +67,6 @@ a {
   display: flex;
   height: 100%;
   flex-direction: column;
-  /* justify-content: space-evenly; */
-  /* align-items: center; */
-  /* margin: 0;
-  padding: 0; */
   margin-top: 7.5em;
 }
 
@@ -120,23 +94,15 @@ a {
 }
 
 .nav-toggle {
-  /* padding: 0.5em; */
   background: transparent;
   border: 0;
   cursor: pointer;
-  /* position: absolute; */
-  /* right: 1em; */
-  /* top: 1em; */
   z-index: 1000;
 }
 
 .nav-open .nav {
   transform: translateX(0);
 }
-
-/* .nav-open .nav-toggle {
-  position: fixed;
-} */
 
 .nav-open .hamburger {
   transform: rotate(0.625turn);
@@ -184,10 +150,6 @@ a {
   display: none;
 }
 
-/* .nav__mixes, .nav__bio {
-  display: none;
-} */
-
 .nav__elem {
   display: flex;
   list-style-type: none;
@@ -197,35 +159,24 @@ a {
   margin-left: 90px;
 }
 
-/* ----- section ----- */
+
+/* ---------- description ---------- */
 
 .intro {
-  /* display: flex;
-  flex-direction: column;
-  max-width: 85%;
-  margin: 0 auto; */
-
   margin-top: 25px;
-  /* margin-top: 80px;
-  max-width: 1056px; */
 }
 
 .intro__text {
   margin-bottom: 25px;
-  /* margin-bottom: 65px; */
 }
-
-/* .bio {
-  text-align: justify;
-  margin: 5px 0;
-} */
 
 .divider {
   border-bottom: 1px solid white;
   width: 100px;
 }
 
-/* ----- music ----- */
+
+/* ---------- releases ---------- */
 
 .music {
   display: grid;
@@ -243,22 +194,9 @@ a {
 }
 
 .card {
-  /* margin-top: auto auto 40px; */
   margin-bottom: 80px;
   justify-self: center;
 }
-
-/* .rerajahan, .insel {
-  justify-self: center;
-}
-
-.together {
-  justify-self: end;
-} */
-
-/*.together {
-  margin-right: 0px;
-} */
 
 .music__release {
   margin-bottom: 25px;
@@ -274,95 +212,9 @@ a {
   margin-top: 5px;
 }
 
-@media all and (min-width: 600px) {
-  /* .bio {
-    text-align: center;
-  } */
 
-  /* .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 85%;
-    margin: 0 auto;
-  } */
+/* ---------- mixes ---------- */
 
-  /* .recel, .insel {
-    margin-top: 15px;
-  } */
-
-  /* .contact {
-    justify-content: space-around;
-    max-width: 35%;
-  } */
-
-  /* .music {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
-}
-
-/* @media all and (min-width: 600px) {
-  .music {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .card {
-    margin: auto;
-
-  }
-} */
-
-/* @media only screen and (min-width: 992px) {
-  .container {
-      max-width: 1164px;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    max-width: 85%;
-    margin: 0 auto;
-    margin-top: 80px;
-    max-width: 1056px;
-  }
-  .intro__text {
-    margin-bottom: 65px;
-  }
-  .bio {
-    text-align: justify;
-    margin: 5px 0;
-  }
-  .music {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* max-width: 85%; */
-    /* margin: 80px auto;*/
-    /* justify-content: space-between; */
-  /* } */
-/*} */
-
-/* .together, .recel, .insel, .rerajahan, .lubdub {
-  /* display: flex;
-  flex-direction: column; */
-  /* margin: 15px 0; */
-  /* margin: 0 auto; */
-/*} */
-
-/*.recel {
-  margin-top: 45px;
-} */
-
-/* .release {
-  margin: 0 auto;
-} */
-
-/* .art {
-  max-width: 85%;
-  display: block;
-  margin: 0 auto;
-} */
-
-/*----- mixes -----*/
 .mixes__title {
   margin: 3.75em 0 1.25em;
   text-align: center;
@@ -380,7 +232,9 @@ a {
   margin-bottom: 1em;
 }
 
-/*----- bio -----*/
+
+/* ---------- bio ---------- */
+
 .bioimg {
   width: 100%;
   margin-top: 5.8em;
@@ -398,16 +252,8 @@ a {
 line-height: 1.5;
 }
 
-/*----- footer -----*/
 
-/* .contact {
-  display: flex;
-  justify-content: space-around;
-  max-width: 70%;
-  margin: 15px auto;
-  margin-top: 30px;
-  text-align: center;
-} */
+/* ---------- footer ---------- */
 
 .social {
   display: flex;
@@ -427,30 +273,13 @@ line-height: 1.5;
   text-align: center;
 }
 
-/* .icon {
-  width: 40px;
-  height: 40px;
-} */
-
-/* .mail {
-  padding: 3px;
-} */
-
-/* .tube {
-  padding: 1px;
-} */
-
-/* .embed {
-  border: 0;
-  width: 85%;
-  height: 42px;
-  margin: 0 auto;
-} */
-
 .current {
   width: 100px;
   border-bottom:4px solid #7BECD8;
 }
+
+
+/* ---------- tablet ---------- */
 
 @media all and (min-width: 800px) {
   .container {
@@ -484,8 +313,6 @@ line-height: 1.5;
   }
 
   .bioimg {
-    /* width: 50%;
-    left: 23.5em; */
     max-width: 50%;
     right: 2em;
   }
@@ -493,27 +320,10 @@ line-height: 1.5;
   .bio {
     max-width: 70%;
   }
-  
-  /* .bio {
-    text-align: center;
-  } */
-
-  /* .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 85%;
-    margin: 0 auto;
-  } */
-
-  /* .recel, .insel {
-    margin-top: 15px;
-  } */
-
-  /* .contact {
-    justify-content: space-around;
-    max-width: 35%;
-  } */
 }
+
+
+/* ---------- desktop ---------- */
 
 @media only screen and (min-width: 1150px) {
   h1 {
@@ -528,20 +338,13 @@ line-height: 1.5;
       margin-top: 50px;
   }
   .intro {
-    /* display: flex;
-    flex-direction: column;
-    max-width: 85%;
-    margin: 0 auto; */
     margin-top: 80px;
     max-width: 1056px;
   }
   .intro__text {
     margin-bottom: 65px;
   }
-  /* .bio {
-    text-align: justify;
-    margin: 5px 0;
-  } */
+
   .music {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -555,13 +358,8 @@ line-height: 1.5;
     margin-bottom: 3em;
   }
 
-  /* .bioimg {
-    left: 36em;
-  } */
-
   .bio {
     margin-top: 7em;
     max-width: 90%;
   }
 }
-
