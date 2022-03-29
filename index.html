@@ -2,228 +2,213 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Amatori</title>
-  <link rel="icon" href="img/logofav.png">
+    <title>Amatori</title>
+    <link rel="icon" href="img/logofav.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
 
-    <header>
+        <!---------- header ---------->
+        <header>
 
-      <!----- brand ----->
-      <div class="brand">
-        <a href="./index.html">
-          <img class="brand__logo" src="img/logo.png" alt="amatori logo">
-        </a>
-        <button class="nav-toggle" arial-label="toggle navigation">
-          <span class="hamburger"></span>
-        </button>
-      </div>
+            <!----- logo ----->
+            <div class="brand">
+                <a href="./index.html">
+                    <img class="brand__logo" src="img/logo.png" alt="amatori logo">
+                </a>
+                <button class="nav-toggle" arial-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            <!----- logo end ----->
 
-      <!----- nav ----->
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link active">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="mixes.html" class="nav__link">Mixes</a>
-          </li>
-          <li class="nav__item">
-            <a href="bio.html" class="nav__link">Bio</a>
-          </li>
 
-          <div class="social">
-            <li><a href="mailto:amatori.music@gmail.com">
+            <!----- hamburger ----->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="mixes.html" class="nav__link">Mixes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="bio.html" class="nav__link">Bio</a>
+                    </li>
+
+                    <!----- hamburger social ----->
+                    <div class="social">
+                        <li><a href="mailto:amatori.music@gmail.com">
+                                <img src="img/email.png" alt="e-mail icon" class="icon mail">
+                            </a></li>
+                        <li><a href="https://amatori.bandcamp.com/" target="_blank">
+                                <img src="img/bandcamp.png" alt="bandcamp icon" class="icon">
+                            </a></li>
+                        <li><a href="https://www.instagram.com/amatorimusic/" target="_blank">
+                                <img src="img/instagram.png" alt="instagram icon" class="icon">
+                            </a></li>
+                        <li><a href="https://www.youtube.com/channel/UC-HtrqtF8NhJxiugi_5FTQA/featured" target="_blank">
+                                <img src="img/youtube.png" alt="youtube icon" class="icon tube">
+                            </a></li>
+                        <li><a href="https://soundcloud.com/amatori" target="_blank">
+                                <img src="img/soundcloud.png" alt="soundcloud icon" class="icon">
+                            </a></li>
+                    </div>
+                    <!----- hambuerger social end ----->
+                </ul>
+            </nav>
+            <!----- hamburger end ----->
+
+
+            <!----- navigation ----->
+            <div class="nav__big">
+                <ul class="nav__brand">
+                    <a href="./index.html">
+                        <img class="nav__logo" src="img/logo.png" alt="amatori logo">
+                    </a>
+                    <a class="nav__title" href="./index.html">Amatori</a>
+                </ul>
+
+                <ul class="nav__elem">
+                    <li><a class="nav__mixes" href="./mixes.html">Mixes</a></li>
+                    <li><a class="nav__bio" href="./bio.html">Bio</a></li>
+                </ul>
+            </div>
+        </header>
+        <!---------- header end ---------->
+
+
+        <!---------- description ---------->
+        <section class="intro">
+            <h1 class="intro__text">
+                We are a group of friends who share a passion for making and playing music. Nothing more. Amatori as
+                amateurs
+                doing things. Amatori as music lovers.
+            </h1>
+            <p class="divider"></p>
+        </section>
+        <!---------- description end ---------->
+
+
+        <!---------- releases ---------->
+        <section class="music">
+
+
+            <!----- lubdub ----->
+            <div class="card lubdub">
+                <div class="music__release">
+                    <p class="music__catalog">AMA005</p>
+                    <p class="music__title">V/A / Lub~Dub</p>
+                </div>
+
+                <iframe class="bandcamp"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=149452267/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+                    seamless>
+                    <a href="https://amatori.bandcamp.com/album/lub-dub">Lub ~ Dub by Amatori</a>
+                </iframe>
+            </div>
+            <!-- lubdub end -->
+
+
+            <!----- rerajahan ----->
+            <div class="card rerajahan">
+                <div class="music__release">
+                    <p class="music__catalog">AMA004</p>
+                    <p class="music__title">Ruder / Rerajaha</p>
+                </div>
+
+                <iframe class="bandcamp"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=2805501825/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+                    seamless>
+                    <a href="https://amatori.bandcamp.com/album/rerajahan">Rerajahan by Ruđer</a>
+                </iframe>
+            </div>
+            <!-- rerajahan end -->
+
+
+            <!----- together ----->
+            <div class="together card">
+                <div class="music__release">
+                    <p class="music__catalog">AMA003</p>
+                    <p class="music__title">Stereo / Together</p>
+                </div>
+
+                <iframe class="bandcamp"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=2173139097/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+                    seamless>
+                    <a href="https://amatori.bandcamp.com/album/together">Together by Stereo</a>
+                </iframe>
+            </div>
+            <!-- together end -->
+
+
+            <!----- recel ----->
+            <div class="recel card">
+                <div class="music__release">
+                    <p class="music__catalog">AMA002</p>
+                    <p class="music__title">Marc Oller / Recel</p>
+                </div>
+
+                <iframe class="bandcamp"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=4089356642/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+                    seamless>
+                    <a href="https://amatori.bandcamp.com/album/recel">Recel by Marc Oller</a>
+                </iframe>
+            </div>
+            <!-- recel end -->
+
+
+            <!----- die insel ----->
+            <div class="insel card">
+                <div class="music__release">
+                    <p class="music__catalog">AMA001</p>
+                    <p class="music__title">V/A /Die Insel</p>
+                </div>
+
+                <iframe class="bandcamp"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=3297157875/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+                    seamless>
+                    <a href="https://amatori.bandcamp.com/album/die-insel">Die Insel by Amatori</a>
+                </iframe>
+            </div>
+            <!-- die insel end -->
+
+        </section>
+        <!---------- releases end ---------->
+
+
+        <!---------- footer ---------->
+        <footer class="contact">
+
+            <a href="mailto:amatori.music@gmail.com">
                 <img src="img/email.png" alt="e-mail icon" class="icon mail">
-              </a></li>
-            <li><a href="https://amatori.bandcamp.com/" target="_blank">
+            </a>
+            <a href="https://amatori.bandcamp.com/" target="_blank">
                 <img src="img/bandcamp.png" alt="bandcamp icon" class="icon">
-              </a></li>
-            <li><a href="https://www.instagram.com/amatorimusic/" target="_blank">
+            </a>
+            <a href="https://www.instagram.com/amatorimusic/" target="_blank">
                 <img src="img/instagram.png" alt="instagram icon" class="icon">
-              </a></li>
-            <li><a href="https://www.youtube.com/channel/UC-HtrqtF8NhJxiugi_5FTQA/featured" target="_blank">
+            </a>
+            <a href="https://www.youtube.com/channel/UC-HtrqtF8NhJxiugi_5FTQA/featured" target="_blank">
                 <img src="img/youtube.png" alt="youtube icon" class="icon tube">
-              </a></li>
-            <li><a href="https://soundcloud.com/amatori" target="_blank">
+            </a>
+            <a href="https://soundcloud.com/amatori" target="_blank">
                 <img src="img/soundcloud.png" alt="soundcloud icon" class="icon">
-              </a></li>
-          </div>
+            </a>
 
+        </footer>
+        <!---------- footer end ---------->
 
+    </div>
 
-        </ul>
-      </nav>
-
-      <div class="nav__big">
-        <ul class="nav__brand">
-          <a href="./index.html">
-            <img class="nav__logo" src="img/logo.png" alt="amatori logo">
-          </a>
-          <a class="nav__title" href="./index.html">Amatori</a>
-        </ul>
-
-        <ul class="nav__elem">
-          <li><a class="nav__mixes" href="./mixes.html">Mixes</a></li>
-          <li><a class="nav__bio" href="./bio.html">Bio</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <section class="intro">
-      <h1 class="intro__text">
-        We are a group of friends who share a passion for making and playing music. Nothing more. Amatori as amateurs
-        doing things. Amatori as music lovers.
-      </h1>
-      <p class="divider"></p>
-    </section>
-
-    <section class="music">
-
-      <div class="card lubdub">
-        <div class="music__release">
-          <p class="music__catalog">AMA005</p>
-          <p class="music__title">V/A / Lub~Dub</p>
-        </div>
-
-        <!-- <a href="https://amatori.bandcamp.com/album/lub-dub" target="_blank">
-          <img src="img/ama005.jpg" alt="various lub ~ dub vinyl" class="art">
-        </a> -->
-
-        <!-- <iframe class="embed"
-          src="https://bandcamp.com/EmbeddedPlayer/album=149452267/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
-          seamless><a href="https://amatori.bandcamp.com/album/lub-dub">Lub ~ Dub by Amatori</a></iframe> -->
-
-        <iframe class="bandcamp"
-          src="https://bandcamp.com/EmbeddedPlayer/album=149452267/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/lub-dub">Lub ~ Dub by Amatori</a>
-        </iframe>
-      </div>
-
-      <div class="card rerajahan">
-        <div class="music__release">
-          <p class="music__catalog">AMA004</p>
-          <p class="music__title">Ruder / Rerajaha</p>
-        </div>
-
-        <!-- <a href="https://amatori.bandcamp.com/album/rerajahan" target="_blank">
-          <img src="img/ama004.jpg" alt="ruder reajahan vinyl" class="art">
-        </a> -->
-
-        <!-- <iframe class="embed"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2805501825/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
-          seamless><a href="https://amatori.bandcamp.com/album/rerajahan">Rerajahan by Ruder</a></iframe> -->
-
-        <iframe class="bandcamp"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2805501825/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/rerajahan">Rerajahan by Ruđer</a>
-        </iframe>
-      </div>
-
-      <div class="together card">
-        <div class="music__release">
-          <p class="music__catalog">AMA003</p>
-          <p class="music__title">Stereo / Together</p>
-        </div>
-
-        <!-- <a href="https://amatori.bandcamp.com/album/together" target="_blank">
-          <img src="img/ama003.jpg" alt="stefano stereo together vinyl" class="art">
-        </a> -->
-
-        <!-- <iframe class="embed"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2173139097/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/together">Together by Stereo</a>
-        </iframe> -->
-
-        <iframe class="bandcamp"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2173139097/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/together">Together by Stereo</a>
-        </iframe>
-      </div>
-
-      <div class="recel card">
-        <div class="music__release">
-          <p class="music__catalog">AMA002</p>
-          <p class="music__title">Marc Oller / Recel</p>
-        </div>
-
-        <!-- <a href="https://amatori.bandcamp.com/album/recel" target="_blank">
-          <img src="img/ama002.jpg" alt="marc oller recel cassette" class="art">
-        </a> -->
-
-        <!-- <iframe class="embed"
-          src="https://bandcamp.com/EmbeddedPlayer/album=4089356642/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/recel">Recel by Marc Oller</a>
-        </iframe> -->
-
-        <iframe class="bandcamp"
-          src="https://bandcamp.com/EmbeddedPlayer/album=4089356642/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/recel">Recel by Marc Oller</a>
-        </iframe>
-      </div>
-
-      <div class="insel card">
-        <div class="music__release">
-          <p class="music__catalog">AMA001</p>
-          <p class="music__title">V/A /Die Insel</p>
-        </div>
-
-        <!-- <a href="https://amatori.bandcamp.com/album/die-insel" target="_blank">
-          <img src="img/ama001.jpg" alt="various die insel vinyl" class="art">
-        </a> -->
-
-        <!-- <iframe class="embed"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3297157875/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/die-insel">Die Insel by Amatori</a>
-        </iframe> -->
-
-        <iframe class="bandcamp"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3297157875/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
-          seamless>
-          <a href="https://amatori.bandcamp.com/album/die-insel">Die Insel by Amatori</a>
-        </iframe>
-      </div>
-
-    </section>
-
-    <footer class="contact">
-
-      <a href="mailto:amatori.music@gmail.com">
-        <img src="img/email.png" alt="e-mail icon" class="icon mail">
-      </a>
-      <a href="https://amatori.bandcamp.com/" target="_blank">
-        <img src="img/bandcamp.png" alt="bandcamp icon" class="icon">
-      </a>
-      <a href="https://www.instagram.com/amatorimusic/" target="_blank">
-        <img src="img/instagram.png" alt="instagram icon" class="icon">
-      </a>
-      <a href="https://www.youtube.com/channel/UC-HtrqtF8NhJxiugi_5FTQA/featured" target="_blank">
-        <img src="img/youtube.png" alt="youtube icon" class="icon tube">
-      </a>
-      <a href="https://soundcloud.com/amatori" target="_blank">
-        <img src="img/soundcloud.png" alt="soundcloud icon" class="icon">
-      </a>
-
-    </footer>
-
-  </div>
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
