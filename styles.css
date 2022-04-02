@@ -19,6 +19,14 @@ body {
     padding: 1.5em 1.25em;
 }
 
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 1164px;
+        margin: 3em auto 2.25em;
+        padding: 0;
+    }
+}
+
 
 /* ---------- general ---------- */
 
@@ -35,15 +43,52 @@ a {
     justify-content: space-between;
 }
 
+@media only screen and (min-width: 992px) {
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head-left {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .head-logo {
     height: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+    .head-logo {
+        height: 44px;
+        margin-right: 1.5em;
+    }
+}
+
+.head-title {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .head-title {
+        display: inline-block;
+    }
 }
 
 .head-toggle {
     background: transparent;
     border: 0;
     cursor: pointer;
+    position: relative;
     z-index: 1000;
+}
+
+@media only screen and (min-width: 992px) {
+    .head-toggle {
+        display: none;
+    }
 }
 
 .hamburger {
@@ -92,9 +137,26 @@ a {
     transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
+@media only screen and (min-width: 992px) {
+    .nav {
+        position: unset;
+        background: none;
+        transform: none;
+        transition: none;
+    }
+}
+
 .nav-list {
     list-style: none;
     margin-top: 7.5em;
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-list {
+        display: flex;
+        margin-top: 0;
+        text-align: center;
+    }
 }
 
 .nav-item {
@@ -102,10 +164,28 @@ a {
     height: 1.375em;
 }
 
+@media only screen and (min-width: 992px) {
+    .nav-item {
+        margin: 0;
+        width: 100px;
+    }
+
+    .nav-hide {
+        display: none;
+    }
+}
+
 .nav-link {
     font-weight: 700;
     font-size: .85em;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        font-weight: 400;
+        font-size: 1em;
+    }
 }
 
 .nav-link:hover,
@@ -118,6 +198,15 @@ a {
     position: absolute;
     left: 1.75em;
     padding-left: 1.75em;
+}
+
+@media only screen and (min-width: 992px) {
+    .active {
+        color: inherit;
+        position: unset;
+        border-left: none;
+        padding-left: 0;
+    }
 }
 
 .nav-open .nav {
@@ -143,8 +232,24 @@ a {
     margin-top: 2em;
 }
 
+@media only screen and (min-width: 992px) {
+    .description {
+        margin-top: 5em;
+    }
+}
+
 .desc-text {
-    margin-bottom: 2em;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 992px) {
+    .desc-text {
+        max-width: 1056px;
+        font-size: 3em;
+        margin-bottom: .75em
+    }
 }
 
 .divider {
@@ -160,9 +265,22 @@ a {
     margin-top: 3.75em;
 }
 
+@media only screen and (min-width: 992px) {
+    .releases {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 4.5em;
+    }
+}
+
 .rel-card {
     justify-self: center;
     margin-bottom: 2.5em;
+}
+
+@media only screen and (min-width: 992px) {
+    .rel-card {
+        margin-bottom: 5em;
+    }
 }
 
 .rel-card_top {
@@ -185,6 +303,13 @@ a {
     height: 422px;
 }
 
+@media only screen and (min-width: 992px) {
+    .bandcamp {
+        width: 350px;
+        height: 470px;
+    }
+}
+
 
 /* ---------- footer ---------- */
 
@@ -192,6 +317,12 @@ a {
     display: flex;
     margin-top: 4em;
     justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer {
+        margin-top: 6.25em;
+    }
 }
 
 .icon {
@@ -282,9 +413,9 @@ a {
 /* ---------- tablet ---------- */
 
 @media all and (min-width: 800px) {
-    .container {
+    /* .container {
         padding: 0 2em;
-    }
+    } */
 
     .brand {
         display: none;
@@ -325,15 +456,7 @@ a {
 
 /* ---------- desktop ---------- */
 
-@media only screen and (min-width: 1150px) {
-    h1 {
-        font-size: 3em;
-    }
-
-    .container {
-        max-width: 1164px;
-    }
-
+@media only screen and (min-width: 992px) {
     .brand {
         margin-top: 50px;
     }

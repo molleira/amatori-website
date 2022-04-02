@@ -1,5 +1,5 @@
 const navToggle = document.querySelector('.head-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
+const navLinks = document.querySelectorAll('.nav-link')
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
