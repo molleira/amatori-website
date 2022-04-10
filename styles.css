@@ -182,10 +182,6 @@ a {
         margin: 0;
         width: 100px;
     }
-
-    .nav-hide {
-        display: none;
-    }
 }
 
 .nav-link {
@@ -215,10 +211,16 @@ a {
 
 @media only screen and (min-width: 600px) {
     .active {
-        color: inherit;
         position: unset;
         border-left: none;
         padding-left: 0;
+        display: block;
+        border-bottom: 4px solid #7BECD8;
+        padding-bottom: .5em;
+    }
+
+    .nav-hide {
+        display: none;
     }
 }
 
@@ -376,31 +378,18 @@ a {
 }
 
 
-
-
-
-
-/* .nav__big {
-    display: none;
-}
-
-.nav__elem {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav__bio {
-    margin-left: 90px;
-} */
-
 /* ---------- mixes ---------- */
 
-.mixes__title {
+.amamix-title {
     margin: 3.75em 0 1.25em;
+}
+
+.amamix-title,
+.amamix-desc {
     text-align: center;
 }
 
-.mixes__description {
+.amamix-desc {
     margin-bottom: 2em;
 }
 
