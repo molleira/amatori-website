@@ -380,17 +380,50 @@ a {
 
 /* ---------- mixes ---------- */
 
+[data-tab-content] {
+    display: none;
+}
+
+.def-tab[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 0 .75em .5em;
+}
+
+.tab.def-tab {
+    border-bottom: 4px solid #fff;
+}
+
+/* .tab:hover {
+    color: #7BECD8;
+} */
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .amamix-title {
-    margin: 3.75em 0 1.25em;
+    margin-top: 2.25em;
 }
 
-.amamix-title,
-.amamix-desc {
-    text-align: center;
+@media only screen and (min-width: 992px) {
+    .amamix-desc {
+        text-align: center;
+    }
 }
 
 .amamix-desc {
-    margin-bottom: 2em;
+    margin: 1.5em 0 2em;
 }
 
 .mixes__soundcloud {
